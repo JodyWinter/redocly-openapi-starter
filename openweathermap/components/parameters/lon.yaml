@@ -1,5 +1,0 @@
-name: lon
-in: query
-description: '**Longitude**. *Example: 139*.'
-schema:
-  type: string

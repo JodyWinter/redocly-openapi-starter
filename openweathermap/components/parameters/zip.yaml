@@ -1,5 +1,0 @@
-name: zip
-in: query
-description: '**Zip code**. Search by zip code. *Example: 78746,us*.'
-schema:
-  type: string

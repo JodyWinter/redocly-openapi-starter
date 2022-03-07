@@ -1,5 +1,0 @@
-name: lat
-in: query
-description: '**Latitude**. *Example: 35*.'
-schema:
-  type: string

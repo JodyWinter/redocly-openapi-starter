@@ -1,5 +1,0 @@
-name: id
-in: query
-description: '**City ID**. *Example: `2172797`*.'
-schema:
-  type: string
