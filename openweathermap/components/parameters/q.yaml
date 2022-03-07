@@ -1,0 +1,5 @@
+name: q
+in: query
+description: '**City name**. *Example: London*.'
+schema:
+  type: string

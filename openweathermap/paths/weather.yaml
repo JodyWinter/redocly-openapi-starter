@@ -1,0 +1,30 @@
+get:
+  tags:
+    - Current Weather Data
+  summary: Get current weather
+  description: Call current weather data for one location.
+  operationId: CurrentWeatherData
+  parameters:
+    - $ref: ..\components\parameters\q.yaml
+    - $ref: ..\components\parameters\id.yaml
+    - $ref: ..\components\parameters\lat.yaml
+    - $ref: ..\components\parameters\lon.yaml
+    - $ref: ..\components\parameters\zip.yaml
+    - $ref: ..\components\parameters\units.yaml
+    - $ref: ..\components\parameters\lang.yaml
+    - $ref: ..\components\parameters\mode.yaml
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: ..\components\schemas\200.yaml
+    '404':
+      description: Not found response
+      content:
+        text/plain:
+          schema:
+            title: Weather not found
+            type: string
+            example: Not found
