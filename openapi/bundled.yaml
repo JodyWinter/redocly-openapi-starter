@@ -41,13 +41,13 @@ paths:
       parameters:
         - name: username
           in: path
-          description: The name that needs to be fetched
+          description: The name that needs to be fetched.
           required: true
           schema:
             type: string
         - name: with_email
           in: query
-          description: Filter users without email
+          description: Filter users without email.
           schema:
             type: boolean
       security:
