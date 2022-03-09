@@ -21,7 +21,7 @@ get:
         type: string
     - name: with_email
       in: query
-      description: Filter users without email
+      description: Filter users without email.
       schema:
         type: boolean
   security:
