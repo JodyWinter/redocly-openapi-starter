@@ -1,0 +1,7 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+bundled.yaml:
+  spec:
+    - '#/paths/~1pathItem/post/operationIdentifier'
+  operation-operationId:
+    - '#/paths/~1pathItem/post/operationId'

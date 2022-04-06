@@ -1,22 +1,30 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
 apis:
-  main@v1:
+  main:
     root: ./openapi/openapi.yaml
+    labels:
+      - main
+    lint: []
+    features.openapi: []
+  production:
+    root: ./openapi/production.yaml
+    labels:
+      - production
+    lint: []
+    features.openapi: []
+  sandbox:
+    root: ./openapi/sandbox.yaml
+    root: ./openapi/sandpit.yaml
+    labels:
+      - sandbox
+    lint: []
+    features.openapi: []
 lint:
-  extends:
-    - recommended
   rules:
-    no-unused-components: warning
+    example-rule-name: error
 features.openapi:
   pagination: section
   showConsole: true
   theme:
-    colors:
-      primary:
-        main: "#32329f"
-  generateCodeSamples:
-    languages:  # Array of language config objects; indicates in which languages to generate code samples.
-      - lang: curl # Can be one of the following supported languages: "curl", "Node.js", "JavaScript".
-      - lang: "Node.js"
-      - lang: "JavaScript"
-      
+    menu:
+      backgroundColor: '#fffff'
