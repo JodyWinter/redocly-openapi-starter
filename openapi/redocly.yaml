@@ -1,0 +1,29 @@
+# See https://redoc.ly/docs/cli/configuration/ for more information.
+apis:
+  main:
+    root: ./openapi.yaml
+    labels:
+      - main
+    lint: []
+    features.openapi: []
+  production:
+    root: ./production.yaml
+    labels:
+      - production
+    lint: []
+    features.openapi: []
+  sandbox:
+    root: ./sandbox.yaml
+    labels:
+      - sandbox
+    lint: []
+    features.openapi: []
+lint:
+  rules:
+    example-rule-name: error
+features.openapi:
+  pagination: section
+  showConsole: true
+  theme:
+    menu:
+      backgroundColor: '#fffff'

@@ -1,20 +1,19 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
 apis:
   main:
-    root: ./openapi/openapi.yaml
+    root: ./openapi.yaml
     labels:
       - main
     lint: []
     features.openapi: []
   production:
-    root: ./openapi/production.yaml
+    root: ./production.yaml
     labels:
       - production
     lint: []
     features.openapi: []
   sandbox:
-    root: ./openapi/sandbox.yaml
-    root: ./openapi/sandpit.yaml
+    root: ./sandbox.yaml
     labels:
       - sandbox
     lint: []
